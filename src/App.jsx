@@ -6,7 +6,7 @@ import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Privacy from "./Components/Privacy";
 import Signup from "./Components/Signup";
-// import Loginform from "./Components/Loginform";
+import Loginform from "./Components/Loginform";
 
 import "./App.css";
 
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
-        {/* <Route path="/loginform" element={<Loginform />} /> */}
+        <Route path="/loginform" element={<Loginform />} />
       </Routes>
     </>
   );
