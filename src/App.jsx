@@ -1,26 +1,28 @@
-import Navbar from './Components/Navbar'
-import { Routes, Route } from "react-router-dom"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-const Home = () => <h1>Home Page</h1>
-const Contact = () => <h1>Contact Page</h1>
-const Login = () => <h1>Login Page</h1>
-const Privacy = () => <h1>Privacy Page</h1>
-const Signup = () => <h1>Signup Page</h1>
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import Contact from "./Components/Contact";
+import Privacy from "./Components/Privacy";
+import Signup from "./Components/Signup";
+// import Loginform from "./Components/Loginform";
 
-function App() {
+import "./App.css";
+
+const App = () => {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
+        {/* <Route path="/loginform" element={<Loginform />} /> */}
       </Routes>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
